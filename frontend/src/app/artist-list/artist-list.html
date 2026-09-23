@@ -1,0 +1,20 @@
+<h2>Lista Artisti</h2>
+
+<table border="1" align="center">
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Genere</th>
+    <th>Paese</th>
+  </tr>
+
+  <tr *ngFor="let t of artists">
+    <td>{{t.id}}</td>
+    <td>{{t.name}}</td>
+    <td>{{t.genre}}</td>
+    <td>{{t.country}}</td>
+  </tr>
+</table>
+
+<br>
+<a routerLink="/">Home</a>
